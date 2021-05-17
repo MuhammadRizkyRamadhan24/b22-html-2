@@ -1,0 +1,128 @@
+.item1 { 
+    grid-area: header;
+    display: flex;
+    flex-wrap: nowrap;
+    background-color: #59981A;
+    height: 43px;
+}
+
+.item1 > div {
+  text-align: center;
+}
+
+.item1 > div > a {
+  font-family: 'Roboto Condensed', sans-serif;
+  font-size: 20px;
+  padding: 5px 10px;
+  color: white;
+  text-decoration: none;
+}
+
+.item2 {
+    grid-area: main;
+}
+
+.item2 .wrapper{
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+
+.item2 .wrapper .title{
+  font-family: 'Fira Sans', sans-serif;
+  color: #3D550C;
+  margin: 0px;
+}
+
+.item2 .wrapper .row{
+  display: flex;
+  flex-direction: row;
+}
+
+.item2 .wrapper .row .category{
+  font-family: 'Roboto Condensed', sans-serif;
+  color: white;
+  padding: 6px 15px;
+  font-size: 18px;
+  align-items: center;
+  margin: 10px 10px 10px 0px;
+  background-color: #59981A;
+}
+
+.item2 .wrapper .row .text{
+  font-family: 'Roboto Condensed', sans-serif;
+  color: #3D550C;
+  font-size: 20px;
+  margin: 0px 0px 0px 15px;
+}
+
+.item2 .wrapper .readmore{
+  display: flex;
+  justify-content: flex-end;
+}
+
+.item2 .wrapper .readmore > a{
+  font-family: 'Roboto Condensed', sans-serif;
+  font-size: 16px;
+  text-decoration: none;
+  color: #59981A;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    'header header header header header header'
+    'main main main main main main';
+  grid-gap: 10px;
+}
+
+.grid-container > div {
+  font-size: 30px;
+}
+
+
+.wrapperArticle{
+    display: flex;
+    flex-direction: column;
+}
+
+.wrapperArticle .up {
+    height: 280px;
+    background-image: url(https://assets.theedgemarkets.com/House_Property_2_20190508004918_theedgemarkets_0.jpg?wePQewSDePo6SBDTibtmaLO618_Hj1Iw);
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.wrapperArticle .up .title{
+    font-size: 76px;
+    color: #59981A;
+    font-family: 'Fira Sans', sans-serif;
+}
+
+.wrapperArticle .down {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 60px 10px 10px 10px;
+}
+
+.wrapperArticle .down .titleArticle {
+    font-size: 42px;
+    padding: 42px;
+    font-family: 'Fira Sans', sans-serif;
+    color: #3D550C;
+}
+
+.wrapperArticle .down .imageArticle{
+    width: 600px;padding: 0px 0px 42px 0px;
+}
+
+.wrapperArticle .down .textArticle{
+    margin: 0px 55px 42px 55px;
+    font-size: larger;
+    font-family: 'Roboto Condensed', sans-serif;
+    color: #3D550C;
+}
